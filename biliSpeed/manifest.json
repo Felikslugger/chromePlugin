@@ -1,0 +1,29 @@
+{
+    "name": "biliSpeed",
+    "version": "1.0",
+    "description": "bilibili视频倍速播放",
+    "manifest_version": 3,
+    "icons": {
+        "16": "ikun.png",
+        "48": "ikun.png",
+        "128": "ikun.png"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "action": {
+        "default_icon": "ikun.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
